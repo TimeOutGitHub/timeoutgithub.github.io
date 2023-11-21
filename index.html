@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Form Redirect</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background: linear-gradient(to top left, #2C3E50, #000); text-align: center; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        button { padding: 30px 40px; font-size: 28px; cursor: pointer; background-color: rgba(0, 0, 0, 0.7); color: #fff; border: 2px solid #fff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); font-weight: bold; transition: background-color 0.3s ease; }
+        button:hover { background-color: rgba(255, 255, 255, 0.2); }
+    </style>
+    <script>
+        // Array of Microsoft Form URLs
+        var formUrls = [
+            'https://forms.office.com/e/cM77EN953k',
+            'https://forms.office.com/e/ERy0R6jv0L',
+            'https://forms.office.com/e/BQSASNzR3Q',
+            'https://forms.office.com/e/0B7jjTaggv',
+            'https://forms.office.com/e/TsWkKS5yKz'
+        ];
+
+        // Generate a random index
+        var randomIndex = Math.floor(Math.random() * formUrls.length);
+
+        // Redirect to the randomly selected form
+        window.location.href = formUrls[randomIndex];
+    </script>
+</head>
+<body>
+    <!-- No button element, randomization happens automatically -->
+</body>
+</html>
